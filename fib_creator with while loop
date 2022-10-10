@@ -1,0 +1,11 @@
+def fib_creator(first, second, length):
+    result = []
+    while length > len(result):
+        if len(result) < 2:
+            result.append(first)
+            result.append(second)
+        else:
+            result.append(result[-1] + result[-2])
+    print(result)
+
+fib_creator(0, 1, 10)
